@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="730.0" prefWidth="1140.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AdminController">
+   <children>
+      <Button layoutX="520.0" layoutY="212.0" mnemonicParsing="false" onAction="#Admins" prefHeight="47.0" prefWidth="182.0" text="Courses" />
+      <Button layoutX="520.0" layoutY="341.0" mnemonicParsing="false" onAction="#Doctors" prefHeight="47.0" prefWidth="182.0" text="Doctors" />
+      <Button layoutX="525.0" layoutY="450.0" mnemonicParsing="false" onAction="#Students" prefHeight="47.0" prefWidth="182.0" text="Students" />
+      <Button fx:id="back" layoutX="36.0" layoutY="668.0" mnemonicParsing="false" onAction="#Back" prefHeight="47.0" prefWidth="182.0" text="Back" />
+      <Button fx:id="admins" layoutX="525.0" layoutY="528.0" mnemonicParsing="false" onAction="#go_to_admins" prefHeight="47.0" prefWidth="182.0" text="Admins" />
+   </children>
+</AnchorPane>
