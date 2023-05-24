@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="730.0" prefWidth="1140.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Admin_modController">
+   <children>
+      <TableView fx:id="admin_table" layoutX="26.0" layoutY="111.0" onMouseClicked="#getselected_admins" prefHeight="328.0" prefWidth="1094.0">
+        <columns>
+          <TableColumn fx:id="fname" prefWidth="250.40000534057617" text="First Name" />
+          <TableColumn fx:id="lname" prefWidth="267.20001220703125" text="Last Name" />
+            <TableColumn fx:id="email" prefWidth="340.79998779296875" text="Email" />
+            <TableColumn fx:id="pass" prefWidth="233.60003662109375" text="Password" />
+        </columns>
+      </TableView>
+      <TextField fx:id="fnametxt" layoutX="33.0" layoutY="448.0" prefHeight="45.0" prefWidth="228.0" promptText="First Name">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="lnametxt" layoutX="290.0" layoutY="448.0" prefHeight="45.0" prefWidth="228.0" promptText="Last Name">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="emailtxt" layoutX="555.0" layoutY="448.0" prefHeight="45.0" prefWidth="325.0" promptText="Email">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="passtxt" layoutX="892.0" layoutY="448.0" prefHeight="45.0" prefWidth="228.0" promptText="Password">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Button fx:id="add" layoutX="81.0" layoutY="540.0" mnemonicParsing="false" onAction="#add" prefHeight="45.0" prefWidth="133.0" text="Add" />
+      <Button fx:id="update" layoutX="489.0" layoutY="540.0" mnemonicParsing="false" onAction="#update" prefHeight="45.0" prefWidth="133.0" text="Update" />
+      <Button fx:id="delete" layoutX="940.0" layoutY="540.0" mnemonicParsing="false" onAction="#delete" prefHeight="45.0" prefWidth="133.0" text="Delete" />
+      <Button fx:id="back" layoutX="489.0" layoutY="654.0" mnemonicParsing="false" onAction="#back" prefHeight="45.0" prefWidth="133.0" text="Back" />
+      <Label layoutX="483.0" layoutY="35.0" prefHeight="53.0" prefWidth="145.0" text="Admins">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>
