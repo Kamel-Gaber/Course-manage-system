@@ -35,6 +35,7 @@ public class Students_Table {
         public Double getDegree() {
 		return degree;
 	}
+	
 	public void setFirst_name(String first_name) {
 		this.first_name = first_name;
 	}
